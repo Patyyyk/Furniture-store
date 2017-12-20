@@ -1,2 +1,2 @@
-# Furniture-store-
+# Furniture-store
 First project on React
