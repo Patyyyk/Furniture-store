@@ -1,6 +1,6 @@
 //Konfiguracja Webpack
 module.exports = {
-  entry: ["whatwg-fetch", "./js/zadanie02.jsx"],
+  entry: ["whatwg-fetch", "./js/app.jsx"],
   output: {
     filename: "./js/out.js"
   },
