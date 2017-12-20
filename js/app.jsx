@@ -24,8 +24,8 @@ class App extends React.Component {
       <Router history={hashHistory}>
         <Route path='/' component={Template}>
           <IndexRoute component={Main}/>
-            <Route path='/products' component={Products}/>
             <Route path='/aboutus' component={AboutUs}/>
+						<Route path='/products' component={Products}/>
             <Route path='/shoppingcart' component={ShoppingCart}/>
 						<Route path='*' component={NotFound}/>
         </Route>
