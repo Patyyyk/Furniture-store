@@ -11,6 +11,7 @@ import Template from './components/template.jsx';
 import Main from './components/main.jsx';
 import Products from './components/products.jsx';
 import AboutUs from './components/aboutus.jsx';
+import ShoppingCart from './components/shoppingcart.jsx';
 import NotFound from './components/404.jsx';
 
 
@@ -25,8 +26,9 @@ class App extends React.Component {
           <IndexRoute component={Main}/>
             <Route path='/products' component={Products}/>
             <Route path='/aboutus' component={AboutUs}/>
+            <Route path='/shoppingcart' component={ShoppingCart}/>
+						<Route path='*' component={NotFound}/>
         </Route>
-        <Route path='*' component={NotFound}/>
       </Router>
     </div>);
   }
