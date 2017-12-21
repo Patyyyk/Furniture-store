@@ -24,7 +24,21 @@ class Template extends React.Component {
       </header>
       <hr/>
       <main className='mainDiv'>{this.props.children}</main>
-      <footer>footer text</footer>
+      <footer className='bg-dark text-white footer-size d-flex justify-content-between'>
+        <p className='footer-text'>&copy; Piotr Adamek</p>
+        <div>
+        <Link to='#'>
+          <i className='icon-pinterest-squared fontello-size text-white'></i>
+        </Link>
+        <Link to='#'>
+          <i className='icon-gplus-squared fontello-size text-white'></i>
+        </Link>
+        <Link to='#'>
+          <i className='icon-facebook-squared fontello-size text-white'></i>
+        </Link>
+        </div>
+
+      </footer>
     </div>);
   }
 }

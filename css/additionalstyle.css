@@ -1,7 +1,25 @@
+body {
+  background-color: #fcf9f8;
+}
 .nav-item{
   padding-left: 10px;
   padding-right: 10px;
 }
 .mainDiv{
   height: 100vh;
+}
+.footer-text {
+  padding-left: 40px;
+}
+
+.footer-size{
+  height: 5%;
+}
+
+.fontello-size {
+  font-size: 1.75rem;
+}
+
+.text-decoration {
+  text-decoration: none;
 }
