@@ -5,9 +5,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.mainDiv{
-  height: 100vh;
-}
+
 .footer-text {
   padding-left: 40px;
 }
@@ -19,7 +17,14 @@ body {
 .fontello-size {
   font-size: 1.75rem;
 }
-
-.text-decoration {
-  text-decoration: none;
+.items-size {
+  width: 25vw;
+  height: 25vh;
+}
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }

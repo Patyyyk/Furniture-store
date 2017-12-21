@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 class Template extends React.Component {
   render() {
     return (<div>
-      <header >
+      <header>
         <ul className="nav nav-pills nav-fill">
           <li className="nav-item">
             <Link className="nav-link active bg-dark" to='/'>Home</Link>
@@ -23,8 +23,9 @@ class Template extends React.Component {
         </ul>
       </header>
       <hr/>
-      <main className='mainDiv'>{this.props.children}</main>
-      <footer className='bg-dark text-white footer-size d-flex justify-content-between'>
+      <main>{this.props.children}</main>
+      <hr/>
+      <footer className='bg-dark text-white footer-size d-flex justify-content-between rounded-top'>
         <p className='footer-text'>&copy; Piotr Adamek</p>
         <div>
         <Link to='#'>
@@ -37,7 +38,6 @@ class Template extends React.Component {
           <i className='icon-facebook-squared fontello-size text-white'></i>
         </Link>
         </div>
-
       </footer>
     </div>);
   }

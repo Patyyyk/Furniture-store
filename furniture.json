@@ -37,35 +37,35 @@
 		}
 	],
 	"sofas": [{
-			"id": 1,
+			"id": 6,
 			"name": "Motala",
 			"designer": "Kristine Sveen",
 			"url": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "1250 euro"
 		},
 		{
-			"id": 2,
+			"id": 7,
 			"name": "Mantorp",
 			"designer": "Kristine Sveen",
 			"url": "https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "2500 euro"
 		},
 		{
-			"id": 3,
+			"id": 8,
 			"name": "Vadstena",
 			"designer": "Max Johnsen",
 			"url": "https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "450 euro"
 		},
 		{
-			"id": 4,
+			"id": 9,
 			"name": "Havla",
 			"designer": "Max Johnsen",
 			"url": "https://images.pexels.com/photos/65941/leather-sofa-recliner-sofa-furniture-lounge-suite-65941.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "1200 euro"
 		},
 		{
-			"id": 5,
+			"id": 10,
 			"name": "Biby",
 			"designer": "Lukas Gregersen",
 			"url": "https://images.pexels.com/photos/276746/pexels-photo-276746.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
@@ -73,35 +73,35 @@
 		}
 	],
 	"beds": [{
-			"id": 1,
+			"id": 11,
 			"name": "Jurva",
 			"designer": "Lukas Gregersen",
 			"url": "https://images.pexels.com/photos/333955/pexels-photo-333955.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "2000 euro"
 		},
 		{
-			"id": 2,
+			"id": 12,
 			"name": "Lilby",
 			"designer": "Max Johnsen",
 			"url": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "1800 euro"
 		},
 		{
-			"id": 3,
+			"id": 13,
 			"name": "Lapua",
 			"designer": "Max Johnsen",
 			"url": "https://images.pexels.com/photos/2705/bed-bedroom-room-furniture.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "2200 euro"
 		},
 		{
-			"id": 4,
+			"id": 14,
 			"name": "Parkimma",
 			"designer": "Kristine Sveen",
 			"url": "https://images.pexels.com/photos/2705/bed-bedroom-room-furniture.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
 			"price": "2600 euro"
 		},
 		{
-			"id": 5,
+			"id": 15,
 			"name": "Perkele",
 			"designer": "Kristine Sveen",
 			"url": "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
