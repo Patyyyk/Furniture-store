@@ -7,6 +7,7 @@ This is my first project on React. I still working on it.
 - Categories of furnitures
 - Adding products to basket
 - Login and registration
+- CSS and styling
 ## Installation
 For now you need to install json server to load an API with products 
 
