@@ -8,4 +8,5 @@ This is my first project on React. I still working on it.
 - Login and registration
 ## Installation
 For now you need to install json server to load an API with products 
+
 ```https://www.npmjs.com/package/json-server```
