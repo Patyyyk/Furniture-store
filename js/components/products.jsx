@@ -1,4 +1,5 @@
 import React from 'react';
+import Searchbar from './searchbar.jsx';
 
 class Products extends React.Component {
   constructor(props) {
@@ -21,9 +22,7 @@ class Products extends React.Component {
   render() {
     return this.state.haveData && (
       <div>
-        <form className='d-flex justify-content-center'>
-          <input type="text" placeholder="Search..." className='text-center'/>
-        </form>
+        <Searchbar/>
       <hr/>
         <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
         {
