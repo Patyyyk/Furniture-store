@@ -37,7 +37,6 @@ class App extends React.Component {
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    console.log('Hello world');
     ReactDom.render(
       <App />,
       document.getElementById('app')
