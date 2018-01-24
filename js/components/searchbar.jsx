@@ -10,7 +10,8 @@ class Searchbar extends React.Component {
   filter = (event) => {
     this.setState({
       [event.target.name]: event.target.value
-    },()=>{
+    },
+    ()=>{
       if(typeof this.props.changeAppState === 'function'){
         this.props.changeAppState(this.state.search);
       }

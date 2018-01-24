@@ -25,13 +25,13 @@ class Products extends React.Component {
   }
   render() {
     return this.state.haveData && (<div>
-      <Searchbar preFilteredItems={this.state.shopItems} changeAppState={this.changeAppState}/>
+      <Searchbar changeAppState={this.changeAppState}/>
       <hr/>
       <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
         {
           this.state.shopItems.map((element) => {
             if (element.name.toLowerCase().indexOf(this.state.filteredText.toLowerCase()) != -1) {
-              return (<div key={element.id} className='items-size m-1'>
+              return (<div key={element.id} className='items-size'>
                 <div className='rounded w-100 h-100' style={{
                     background: `url(${element.url})`,
                     backgroundSize: 'cover'

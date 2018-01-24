@@ -20,11 +20,5 @@ body {
 .items-size {
   width: 25vw;
   height: 25vh;
-}
-.clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  margin: 12px;
 }
