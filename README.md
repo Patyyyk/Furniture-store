@@ -10,4 +10,4 @@ This is my first project on React. I still working on it.
 ## Is live now! 
 This is live version with my own API 
 
-```https://my-json-server.typicode.com/Patyyyk/Furniture-store```
+```https://patyyyk.github.io/Furniture-store/#/```
