@@ -12,7 +12,7 @@ class Products extends React.Component {
   }
 
   componentWillMount() {
-    fetch(`http://localhost:3000/db`).then(response => {
+    fetch(`https://my-json-server.typicode.com/Patyyyk/Furniture-store/db`).then(response => {
       if (response.ok) {
         return response.json()
       } else {
