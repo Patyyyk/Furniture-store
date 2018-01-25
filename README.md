@@ -7,8 +7,6 @@ This is my first project on React. I still working on it.
 - Login and registration
 - CSS and styling
 
-## Is live now!
-This is live version with my own API
 ## Is live now! 
 This is live version with my own API 
 
