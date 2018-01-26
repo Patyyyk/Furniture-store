@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
 			<div className='container-fluid'>
-      <div className='text-center'><h1>HelloFurnituresLogo!</h1></div>
+      <div className='text-center'><h1>Hello-FurnituresLogo!</h1></div>
       <Router history={hashHistory}>
         <Route path='/' component={Template}>
           <IndexRoute component={Main}/>
