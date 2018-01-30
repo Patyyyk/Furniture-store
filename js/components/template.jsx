@@ -13,8 +13,8 @@ class Template extends React.Component {
           <li className="nav-item">
             <Link className="nav-link active bg-dark" to='/aboutus'>About Us</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link active bg-dark" to='/products'>Our products</Link>
+          <li className="nav-item dropdown">
+            <Link className="nav-link active bg-dark dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" to='/#'>Our products</Link>
             <Dropdown/>
           </li>
           <li className="nav-item">

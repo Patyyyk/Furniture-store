@@ -3,17 +3,12 @@ import {Link} from 'react-router';
 
 class Dropdown extends React.Component {
   render() {
-    return (<ul className="nav nav-pills nav-fill ">
-      <li className="nav-item">
-        <Link className="nav-link active bg-dark" to='/products'>Beds</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link active bg-dark" to='/products'>Chairs</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link active bg-dark" to='/products'>Sofas</Link>
-      </li>
-    </ul>);
+    return (<div className="dropdown-menu" aria-labelledby="navbarDropdown">
+        <Link className="dropdown-item" to='/products'>All products</Link>
+        <Link className="dropdown-item" to='/products'>Beds</Link>
+        <Link className="dropdown-item" to='/products'>Chairs</Link>
+        <Link className="dropdown-item" to='/products'>Sofas</Link>
+    </div>);
   }
 }
 export default Dropdown;
