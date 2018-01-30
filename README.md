@@ -11,3 +11,6 @@ This is my first project on React. I still working on it.
 This is live version with my own API 
 
 ```https://patyyyk.github.io/Furniture-store/#/```
+
+## Technolgies used:
+HTML5, CSS3 ,React ,Bootstrap
