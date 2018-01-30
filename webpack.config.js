@@ -5,7 +5,7 @@ module.exports = {
     filename: "./js/out.js"
   },
   devServer: {
-    port: 3006,
+    port: 3001,
     contentBase: './',
     inline: true
   },

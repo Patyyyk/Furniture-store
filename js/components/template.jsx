@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import Dropdown from './dropdown.jsx';
 
 class Template extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Template extends React.Component {
           </li>
           <li className="nav-item">
             <Link className="nav-link active bg-dark" to='/products'>Our products</Link>
+            <Dropdown/>
           </li>
           <li className="nav-item">
             <Link className="nav-link active bg-dark" to='/shoppingcart'>
@@ -28,15 +30,15 @@ class Template extends React.Component {
       <footer className='bg-dark text-white footer-size d-flex justify-content-between rounded-top'>
         <p className='footer-text'>&copy; Piotr Adamek</p>
         <div>
-        <Link to='#'>
-          <i className='icon-pinterest-squared fontello-size text-white'></i>
-        </Link>
-        <Link to='#'>
-          <i className='icon-gplus-squared fontello-size text-white'></i>
-        </Link>
-        <Link to='#'>
-          <i className='icon-facebook-squared fontello-size text-white'></i>
-        </Link>
+          <Link to='#'>
+            <i className='icon-pinterest-squared fontello-size text-white'></i>
+          </Link>
+          <Link to='#'>
+            <i className='icon-gplus-squared fontello-size text-white'></i>
+          </Link>
+          <Link to='#'>
+            <i className='icon-facebook-squared fontello-size text-white'></i>
+          </Link>
         </div>
       </footer>
     </div>);
