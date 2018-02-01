@@ -41,27 +41,23 @@ class Products extends React.Component {
   }
 
   render() {
-    console.log(this.state.dropdownValue)
     return this.state.haveData && (<div>
       <form className='d-flex justify-content-center'>
-      <Searchbar changeAppState={this.changeAppState}/>
-      <Dropdown categoryPick={this.categoryPick}/>
+        <Searchbar changeAppState={this.changeAppState}/>
+        <Dropdown categoryPick={this.categoryPick}/>
       </form>
-      <hr/>
-      <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
-        {
-          this.state.shopItems.map((element) => {
-            if (element.name.toLowerCase().indexOf(this.state.filteredText.toLowerCase()) != -1) {
-              return (<div key={element.id} className='items-size'>
-                <div className='rounded w-100 h-100' style={{
-                    background: `url(${element.url})`,
-                    backgroundSize: 'cover'
-                  }}></div>
-                <p>Model:{element.name}</p>
-              </div>);
+        <hr/>
+          <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
+            {
+                this.state.shopItems.map((element) => {
+                    if (element.name.toLowerCase().indexOf(this.state.filteredText.toLowerCase()) != -1) {
+                      return (<div key={element.id} className='items-size'>
+                                <div className='rounded w-100 h-100' style={{background: `url(${element.url})`, backgroundSize: 'cover'}}></div>
+                                <p>Model:{element.name}</p>
+                              </div>);
+                }
+            })
             }
-          })
-        }
       </div>
     </div>);
   }
