@@ -2,7 +2,6 @@
 This is my first project on React. I still working on it.
 ## Things to do:
 - Product site
-- Categories of furnitures
 - Adding products to basket
 - Login and registration
 - CSS and styling
