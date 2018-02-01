@@ -7,7 +7,9 @@ class Products extends React.Component {
     this.state = {
       shopItems: [],
       haveData: false,
-      filteredText: ''
+      filteredText: '',
+      dropdownValue:'',
+      db:[]
     }
   }
 
@@ -20,9 +22,12 @@ class Products extends React.Component {
       }
     }).then(db => db.chairs.concat(db.sofas, db.beds)).then(db => this.setState({shopItems: db, haveData: true}))
   }
+
   changeAppState = (filteredText) => {
     this.setState({filteredText: filteredText})
   }
+
+
   render() {
     return this.state.haveData && (<div>
       <Searchbar changeAppState={this.changeAppState}/>
