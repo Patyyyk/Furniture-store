@@ -10,7 +10,13 @@ class Dropdown extends React.Component {
   };
 
   dropdownChange = (event) => {
-    this.setState({dropdownValue: event.target.value})
+    this.setState({
+      dropdownValue: event.target.value
+    }, () => {
+      if (typeof this.props.categoryPick === 'function') {
+        this.props.categoryPick(this.state.dropdownValue);
+      }
+    })
   }
 
   render() {
