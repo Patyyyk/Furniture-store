@@ -9,8 +9,7 @@ class Products extends React.Component {
       shopItems: [],
       haveData: false,
       filteredText: '',
-      dropdownValue: '',
-      allItems: []
+      dropdownValue: ''
     }
   }
 
@@ -22,16 +21,8 @@ class Products extends React.Component {
         console.log('Error');
       }
     }).then(db => db.chairs.concat(db.sofas, db.beds)).then(db => this.setState({shopItems: db, haveData: true}))
-
-    fetch(`https://my-json-server.typicode.com/Patyyyk/Furniture-store/db`).then(response => {
-      if (response.ok) {
-        return response.json()
-      } else {
-        console.log('Error');
-      }
-    }).then(db => this.setState({allItems: db}))
-
   }
+
   changeAppState = (filteredText) => {
     this.setState({filteredText: filteredText})
   }
@@ -49,7 +40,17 @@ class Products extends React.Component {
         <hr/>
           <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
             {
-                this.state.shopItems.map((element) => {
+                this.state.shopItems.filter(element => {
+                  if (this.state.dropdownValue === '' || this.state.dropdownValue === 'All products'){
+                    return element;
+                  }else if (this.state.dropdownValue === 'Beds'){
+                    return element.id > 10
+                  }else if (this.state.dropdownValue === 'Chairs'){
+                    return element.id < 6
+                  }else if (this.state.dropdownValue === 'Sofas'){
+                    return element.id > 5 && element.id < 11
+                  }
+                }).map((element) => {
                     if (element.name.toLowerCase().indexOf(this.state.filteredText.toLowerCase()) != -1) {
                       return (<div key={element.id} className='items-size'>
                                 <div className='rounded w-100 h-100' style={{background: `url(${element.url})`, backgroundSize: 'cover'}}></div>
