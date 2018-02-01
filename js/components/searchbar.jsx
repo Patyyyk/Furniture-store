@@ -1,5 +1,4 @@
 import React from 'react';
-import Dropdown from './dropdown.jsx';
 
 class Searchbar extends React.Component {
   constructor(props) {
@@ -19,10 +18,9 @@ class Searchbar extends React.Component {
     });
   };
   render() {
-    return (<form className='d-flex justify-content-center'>
-              <input type="text" placeholder='Search' name='search' className='text-center' onChange={this.filter} value={this.state.search}/>
-              <Dropdown/>
-            </form>)
+    return (
+      <input type="text" placeholder='Search' name='search' className='text-center' onChange={this.filter} value={this.state.search}/>
+           )
   }
 }
 export default Searchbar;

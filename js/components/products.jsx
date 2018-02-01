@@ -1,5 +1,6 @@
 import React from 'react';
 import Searchbar from './searchbar.jsx';
+import Dropdown from './dropdown.jsx';
 
 class Products extends React.Component {
   constructor(props) {
@@ -8,8 +9,8 @@ class Products extends React.Component {
       shopItems: [],
       haveData: false,
       filteredText: '',
-      dropdownValue:'',
-      db:[]
+      dropdownValue: '',
+      allItems: []
     }
   }
 
@@ -21,16 +22,31 @@ class Products extends React.Component {
         console.log('Error');
       }
     }).then(db => db.chairs.concat(db.sofas, db.beds)).then(db => this.setState({shopItems: db, haveData: true}))
-  }
 
+    fetch(`https://my-json-server.typicode.com/Patyyyk/Furniture-store/db`).then(response => {
+      if (response.ok) {
+        return response.json()
+      } else {
+        console.log('Error');
+      }
+    }).then(db => this.setState({allItems: db}))
+
+  }
   changeAppState = (filteredText) => {
     this.setState({filteredText: filteredText})
   }
 
+  categoryPick = (dropdownValue) => {
+    this.setState({dropdownValue: dropdownValue})
+  }
 
   render() {
+    console.log(this.state.dropdownValue)
     return this.state.haveData && (<div>
+      <form className='d-flex justify-content-center'>
       <Searchbar changeAppState={this.changeAppState}/>
+      <Dropdown categoryPick={this.categoryPick}/>
+      </form>
       <hr/>
       <div className='w-100 h-100 d-flex flex-row flex-wrap justify-content-center overflow'>
         {
